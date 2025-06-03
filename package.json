@@ -2,6 +2,7 @@
   "name": "spend-bill-gates-money",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://okfde.github.io/spend-money",
   "dependencies": {
     "@chakra-ui/react": "^2.1.0",
     "@emotion/react": "^11.9.0",
