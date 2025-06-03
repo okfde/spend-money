@@ -6,7 +6,7 @@ function Receipt() {
   const filtered = items.filter((item) => item.count > 0);
   let spendMoney = 0;
   
-  filtered.map((item) => {
+  filtered.forEach((item) => {
     spendMoney += item.productPrice * item.count;
   });
 

@@ -17,7 +17,7 @@ export const productSlice = createSlice({
 
       let price = 0;
 
-      state.items.map((item) => {
+      state.items.forEach((item) => {
         price += Number(item.count) * Number(item.productPrice);
       });
 

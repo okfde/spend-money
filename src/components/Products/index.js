@@ -17,8 +17,7 @@ function Products() {
         zIndex="sticky"
         opacity={1}
         sx={{
-          position: "-webkit-sticky",
-          /* Safari */ position: "sticky",
+          position: "sticky",
           top: "0",
         }}
       >

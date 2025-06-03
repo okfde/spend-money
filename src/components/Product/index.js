@@ -23,7 +23,7 @@ function Product({ id }) {
     dispatch(updateCount({ id: item.id, count: count }));
 
     setIsSellable(controlSellable(count));
-  }, [count]);
+  }, [count, dispatch, item.id]);
 
   useEffect(() => {
     if (item.productPrice <= currentMoney) {
@@ -31,7 +31,7 @@ function Product({ id }) {
     }else{
       setIsBuyable(false);
     }
-  }, [currentMoney]);
+  }, [currentMoney, item.productPrice]);
 
   const buy = () => {
     handleChange(Number(count) + 1);
