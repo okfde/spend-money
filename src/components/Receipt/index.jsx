@@ -20,7 +20,7 @@ function Receipt() {
       <Box>
         <Text fontSize={35} fontWeight={700}>
           {" "}
-          Your Receipt
+          Deine Quittung
         </Text>
         {filtered.map((item) => (
           <Grid templateColumns="repeat(3, 1fr)" gap={4} key={item.id}>
@@ -33,7 +33,7 @@ function Receipt() {
             </GridItem>
             <GridItem>
               {" "}
-              <Text color="green.600"> ${item.productPrice * item.count}</Text>
+              <Text color="green.600">{item.productPrice * item.count} €</Text>
             </GridItem>
           </Grid>
         ))}
@@ -43,7 +43,7 @@ function Receipt() {
           TOTAL{" "}
         </Text>
         <Text color="green.500" float="right" me={5} mb={5} fontSize={20}>
-          $ {spendMoney}
+          {spendMoney} €
         </Text>
       </Box>
     </Grid>

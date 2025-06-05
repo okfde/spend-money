@@ -23,7 +23,7 @@ function Products() {
       >
         <Text fontSize={40} fontWeight={500}>
           {" "}
-          $ {currentMoney}
+          {currentMoney} €
         </Text>
       </Box>
 

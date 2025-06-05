@@ -6,8 +6,8 @@ export const productSlice = createSlice({
   name: "product",
   initialState: {
     items: data,
-    currentMoney: 100000000000,
-    initialMoney: 100000000000,
+    currentMoney: 3100000000,
+    initialMoney: 3100000000,
   },
   reducers: {
     updateCount: (state, action) => {

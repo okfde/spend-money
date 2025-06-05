@@ -67,17 +67,17 @@ function Product({ id }) {
       <Text fontSize={25} fontWeight={700}>
         {item.productName}
       </Text>
-      <Text>${item.productPrice}</Text>
+      <Text>{item.productPrice} €</Text>
       <Box alignItems="center" m="auto">
         <Button
           colorScheme="red"
           isDisabled={!isSellable}
-          width="100px"
+          width="80px"
           height="40px"
           ms={4}
           onClick={() => sell()}
         >
-          Sell
+          –
         </Button>
 
         <Input
@@ -96,7 +96,7 @@ function Product({ id }) {
           me={4}
           onClick={() => buy()}
         >
-          Buy
+          +
         </Button>
       </Box>
     </Box>
