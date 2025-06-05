@@ -2,7 +2,6 @@
   "name": "spend-bill-gates-money",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
   "type": "module",
   "dependencies": {
     "@chakra-ui/react": "^2.1.0",
