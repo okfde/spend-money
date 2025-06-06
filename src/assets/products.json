@@ -3,161 +3,161 @@
     {
       "id": "1",
       "productName": "Monatliche Stromkosten",
-      "productPrice": "80",
+      "productPrice": 80,
       "image": "images/Steckdose.png",
       "count": "0"
     },
     {
       "id": "2",
       "productName": "1 Jahr Rundfunkbeitrag (GEZ)",
-      "productPrice": "220.32",
+      "productPrice": 220.32,
       "image": "images/Fernseher.png",
       "count": "0"
     },
     {
       "id": "3",
       "productName": "Jährliche Semestergebühren",
-      "productPrice": "320",
+      "productPrice": 320,
       "image": "images/Sparschwein.png",
       "count": "0"
     },
     {
       "id": "4",
       "productName": "1 Jahr Menstruationsprodukte",
-      "productPrice": "420",
+      "productPrice": 420,
       "image": "images/Tampons.png",
       "count": "0"
     },
     {
       "id": "5",
       "productName": "1 Jahr Deutschlandticket",
-      "productPrice": "708",
+      "productPrice": 708,
       "image": "images/Ticketschalter.png",
       "count": "0"
     },
     {
       "id": "6",
       "productName": "1 Jahr Mittagessen für ein Schulkind",
-      "productPrice": "972",
+      "productPrice": 972,
       "image": "images/Mittagessen.png",
       "count": "0"
     },
     {
       "id": "7",
       "productName": "1 Monat BaföG",
-      "productPrice": "992",
+      "productPrice": 992,
       "image": "images/Geldrolle.png",
       "count": "0"
     },
     {
       "id": "8",
       "productName": "Eine Vollkeramik-Krone",
-      "productPrice": "1000",
+      "productPrice": 1000,
       "image": "images/Zahn.png",
       "count": "0"
     },
     {
       "id": "9",
       "productName": "Ein Elektrorollstuhl für Menschen mit Behinderung",
-      "productPrice": "8000",
+      "productPrice": 8000,
       "image": "images/Elektrorollstuhl.png",
       "count": "0"
     },
     {
       "id": "10",
       "productName": "Spahns Spendendinner",
-      "productPrice": "9999",
+      "productPrice": 9999,
       "image": "images/Spendendinner.png",
       "count": "0"
     },
     {
       "id": "11",
       "productName": "1 Jahr Bedingungsloses Grundeinkommen",
-      "productPrice": "14400",
+      "productPrice": 14400,
       "image": "images/Portemonee.png",
       "count": "0"
     },
     {
       "id": "12",
       "productName": "Ein Assistenzhund",
-      "productPrice": "20000",
+      "productPrice": 20000,
       "image": "images/Hund.png",
       "count": "0"
     },
     {
       "id": "13",
       "productName": "1 Jahr Platz in einem Altersheim",
-      "productPrice": "40000",
+      "productPrice": 40000,
       "image": "images/Bingo.png",
       "count": "0"
     },
     {
       "id": "14",
       "productName": "Bau eines Gemeinschaftsgartens",
-      "productPrice": "100000",
+      "productPrice": 100000,
       "image": "images/Giesskanne.png",
       "count": "0"
     },
     {
       "id": "15",
       "productName": "Eine Mobile Arztpraxis für Wohnungslose",
-      "productPrice": "250000",
+      "productPrice": 250000,
       "image": "images/Stroboskop.png",
       "count": "0"
     },
     {
       "id": "16",
       "productName": "Bau eines Spielplatzes",
-      "productPrice": "280000",
+      "productPrice": 280000,
       "image": "images/Wippente.png",
       "count": "0"
     },
     {
       "id": "17",
       "productName": "Bau einer Sozialwohnung",
-      "productPrice": "300000",
+      "productPrice": 300000,
       "image": "images/Haus.png",
       "count": "0"
     },
     {
       "id": "18",
       "productName": "Spahns Villa",
-      "productPrice": "4100000",
+      "productPrice": 4100000,
       "image": "images/Villa.png",
       "count": "0"
     },
     {
       "id": "19",
       "productName": "Bau eines Kulturzentrums",
-      "productPrice": "7000000",
+      "productPrice": 7000000,
       "image": "images/Schlagzeug.png",
       "count": "0"
     },
     {
       "id": "20",
       "productName": "1 Jahr Finanzierung vom Deutschen Tierschutzbund",
-      "productPrice": "22752465",
+      "productPrice": 22752465,
       "image": "images/Katzenbabies.png",
       "count": "0"
     },
     {
       "id": "21",
       "productName": "1 Jahr Finanzierung aller Tafeln in Deutschland",
-      "productPrice": "41364538",
+      "productPrice": 41364538,
       "image": "images/Topf.png",
       "count": "0"
     },
     {
       "id": "22",
       "productName": "1 Jahr Finanzierung vom Deutschen Roten Kreuz",
-      "productPrice": "398200000",
+      "productPrice": 398200000,
       "image": "images/Arztkoffer.png",
       "count": "0"
     },
     {
       "id": "23",
       "productName": "Spahns FFP2-Masken",
-      "productPrice": "2300000000",
+      "productPrice": 2300000000,
       "image": "images/FFP2_Maske.png",
       "count": "0"
     }

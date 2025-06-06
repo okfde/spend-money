@@ -1,6 +1,7 @@
 import Product from "../Product";
 import { useSelector } from "react-redux";
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
+import formatMoney from "../../helpers/formatMoney";
 
 function Products() {
   const items = useSelector((state) => state.product.items);
@@ -23,7 +24,7 @@ function Products() {
       >
         <Text fontSize={40} fontWeight={500}>
           {" "}
-          {currentMoney} €
+          {formatMoney(currentMoney)}
         </Text>
       </Box>
 

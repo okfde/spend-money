@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Box, Button, Image, Input, Text } from "@chakra-ui/react";
 import { updateCount } from "../../redux/Product/productSlice";
 import controlSellable from "../../helpers/controlSellable";
+import formatMoney from "../../helpers/formatMoney";
 
 function Product({ id }) {
   const items = useSelector((state) => state.product.items);
@@ -67,7 +68,7 @@ function Product({ id }) {
       <Text fontSize={25} fontWeight={700}>
         {item.productName}
       </Text>
-      <Text>{item.productPrice} €</Text>
+      <Text>{formatMoney(item.productPrice)}</Text>
       <Box alignItems="center" m="auto">
         <Button
           colorScheme="red"

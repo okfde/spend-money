@@ -1,5 +1,6 @@
 import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
+import formatMoney from "../../helpers/formatMoney";
 
 function Receipt() {
   const items = useSelector((state) => state.product.items);
@@ -33,7 +34,7 @@ function Receipt() {
             </GridItem>
             <GridItem>
               {" "}
-              <Text color="green.600">{item.productPrice * item.count} €</Text>
+              <Text color="green.600">{formatMoney(item.productPrice * item.count)}</Text>
             </GridItem>
           </Grid>
         ))}
@@ -43,7 +44,7 @@ function Receipt() {
           TOTAL{" "}
         </Text>
         <Text color="green.500" float="right" me={5} mb={5} fontSize={20}>
-          {spendMoney} €
+          {formatMoney(spendMoney)}
         </Text>
       </Box>
     </Grid>
