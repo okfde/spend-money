@@ -1,58 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Box, Button, Image, Input, Text } from "@chakra-ui/react";
-import { updateCount } from "../../redux/Product/productSlice";
-import controlSellable from "../../helpers/controlSellable";
+import React from "react";
+import { useSelector } from "react-redux";
+import { Box, Image, Text } from "@chakra-ui/react";
+import ProductControls from "../ProductControls";
 import formatMoney from "../../helpers/formatMoney";
 
 function Product({ id }) {
-  const items = useSelector((state) => state.product.items);
-  const currentMoney = useSelector((state) => state.product.currentMoney);
-
-  const item = items.find((tmp) => tmp.id === id);
-
-  const [count, setCount] = useState(item.count);
-  const [isBuyable, setIsBuyable] = useState(true);
-  const [isSellable, setIsSellable] = useState(false);
-
-  const dispatch = useDispatch();
-
-  let maximumBuy = Math.floor(currentMoney / item.productPrice);
-  let maximum = Number(count) + Number(maximumBuy);
-
-  useEffect(() => {
-    dispatch(updateCount({ id: item.id, count: count }));
-
-    setIsSellable(controlSellable(count));
-  }, [count, dispatch, item.id]);
-
-  useEffect(() => {
-    if (item.productPrice <= currentMoney) {
-      setIsBuyable(true);
-    }else{
-      setIsBuyable(false);
-    }
-  }, [currentMoney, item.productPrice]);
-
-  const buy = () => {
-    handleChange(Number(count) + 1);
-  };
-
-  const sell = () => {
-    handleChange(Number(count) - 1);
-  };
-
-  const handleChange = (value) => {
-    if (value > maximum && currentMoney > 0) {
-      setCount(maximum);
-    } else if (value < 0) {
-      setCount(0);
-    } else if (currentMoney === 0 && value < count) {
-      setCount(value);
-    } else {
-      setCount(value);
-    }
-  };
+  const item = useSelector((state) =>
+    state.product.items.find((tmp) => tmp.id === id)
+  );
 
   return (
     <Box
@@ -69,37 +24,7 @@ function Product({ id }) {
         {item.productName}
       </Text>
       <Text>{formatMoney(item.productPrice)}</Text>
-      <Box alignItems="center" m="auto">
-        <Button
-          colorScheme="red"
-          isDisabled={!isSellable}
-          width="80px"
-          height="40px"
-          ms={4}
-          onClick={() => sell()}
-        >
-          –
-        </Button>
-
-        <Input
-          type="number"
-          textAlign="center"
-          value={count}
-          onChange={(e) => handleChange(e.target.value)}
-          width="80px"
-          height="40px"
-        />
-        <Button
-          colorScheme="green"
-          isDisabled={!isBuyable}
-          width="80px"
-          height="40px"
-          me={4}
-          onClick={() => buy()}
-        >
-          +
-        </Button>
-      </Box>
+      <ProductControls item={item} />
     </Box>
   );
 }
