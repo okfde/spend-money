@@ -1,12 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Text } from "@chakra-ui/react";
 import ProductControls from "../ProductControls";
 import formatMoney from "../../helpers/formatMoney";
 
 function Product({ id }) {
   const item = useSelector((state) =>
     state.product.items.find((tmp) => tmp.id === id)
+  );
+  const price = item.type === "donation" ? item.productText : formatMoney(item.productPrice);
+
+  const controls = item.type === "donation" ? (
+    <Button href="/jetzt-spenden" colorScheme="blue">
+      Jetzt spenden!
+    </Button>
+  ) : (
+    <ProductControls item={item} />
   );
 
   return (
@@ -23,8 +32,8 @@ function Product({ id }) {
       <Text fontSize={25} fontWeight={700}>
         {item.productName}
       </Text>
-      <Text>{formatMoney(item.productPrice)}</Text>
-      <ProductControls item={item} />
+      <Text>{price}</Text>
+      {controls}
     </Box>
   );
 }

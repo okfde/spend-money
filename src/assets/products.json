@@ -160,6 +160,15 @@
       "productPrice": 2300000000,
       "image": "images/FFP2_Maske.png",
       "count": "0"
+    },
+    {
+      "id": "24",
+      "productName": "Eine Spende an FragDenStaat",
+      "productPrice": 0,
+      "productText": "So viel, wie dir Transparenz wert ist",
+      "image": "images/Logo_FdS.png",
+      "count": "0",
+      "type": "donation"
     }
   ]
 }
