@@ -16,36 +16,35 @@ function Receipt() {
   }
 
   return (
-    <Row>
+    <Row className="mt-3">
       <Col></Col>
       <Col>
-        <div className="text-center">
-          <h3 style={{ fontSize: "35px", fontWeight: 700 }}>Deine Quittung</h3>
+        <div>
+          <h3 className="fs-2 fw-bold">Deine Quittung</h3>
 
           {filtered.map((item) => (
-            <Row key={item.id} className="mb-2">
-              <Col>
-                <span style={{ fontSize: "15px" }}>{item.productName}</span>
+            <Row key={item.id} className="mt-3 mb-2">
+              <Col className="text-start">
+                <span className="fs-6">{item.productName}</span>
               </Col>
-              <Col>
-                <span>x {item.count}</span>
+              <Col className="text-start">
+                <span>× {item.count}</span>
               </Col>
-              <Col>
-                <span style={{ color: "#2F855A" }}>
+              <Col className="text-end">
+                <span className="text-success">
                   {formatMoney(item.productPrice * item.count)}
                 </span>
               </Col>
             </Row>
           ))}
 
-          <br />
           <hr />
 
-          <div className="d-flex justify-content-between">
-            <span style={{ fontSize: "20px", fontWeight: 700, marginLeft: "1rem" }}>
+          <div className="d-flex justify-content-between w-100">
+            <span className="text-start fs-5 fw-bold">
               TOTAL
             </span>
-            <span style={{ color: "#38A169", fontSize: "20px", marginRight: "1.25rem", marginBottom: "1.25rem" }}>
+            <span className="text-end text-success fs-5 fw-bold mb-4">
               {formatMoney(spendMoney)}
             </span>
           </div>

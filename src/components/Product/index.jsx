@@ -19,23 +19,13 @@ function Product({ id }) {
   );
 
   return (
-    <Card
-      style={{
-        width: "100%",
-        height: "100%",
-        backgroundColor: "#EBF8FF",
-        padding: "1rem",
-        color: "black",
-        border: "1px solid",
-        alignItems: "center"
-      }}
-    >
-      <Card.Img src={item.image} style={{ margin: "auto" }} />
-      <Card.Body className="text-center">
-        <Card.Title style={{ fontSize: "25px", fontWeight: 700 }}>
+    <Card className="w-100 h-100 bg-light p-0 text-dark d-flex align-items-center" >
+      <Card.Img src={item.image} className="mx-auto object-fit-contain" style={{ maxHeight: "400px" }} />
+      <Card.Body className="text-center pt-0">
+        <Card.Title className="fs-4 fw-bold">
           {item.productName}
         </Card.Title>
-        <Card.Text>{price}</Card.Text>
+        <Card.Text className="fs-4">{price}</Card.Text>
         {controls}
       </Card.Body>
     </Card>

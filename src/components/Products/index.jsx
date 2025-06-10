@@ -10,25 +10,19 @@ function Products() {
   return (
     <Container fluid>
       <div
+        className="mt-3 mb-3 bg-primary text-white sticky-top py-2"
         style={{
-          marginTop: "0.5rem",
-          marginBottom: "1rem",
-          backgroundColor: "#48BB78", // entspricht green.400
-          color: "white",
           height: "80px",
-          zIndex: 1000,
-          opacity: 1,
-          position: "sticky",
-          top: "0"
+          zIndex: 1000
         }}
       >
-        <h2 style={{ fontSize: "40px", fontWeight: 500, padding: "10px" }}>
+        <h2 className="fs-1 fw-medium p-2">
           {" "}
           {formatMoney(currentMoney)}
         </h2>
       </div>
 
-      <Row xs={1} md={3} className="g-4">
+      <Row xs={1} md={3} className="g-3">
         {items.map((item) => (
           <Col key={item.id}>
             <Product id={item.id} />

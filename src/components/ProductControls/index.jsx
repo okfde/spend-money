@@ -37,11 +37,12 @@ function ProductControls({ item }) {
   };
 
   return (
-    <Container className="d-flex justify-content-center">
+    <Container className="d-flex justify-content-center mb-2">
       <Button
         variant="danger"
         disabled={!isSellable}
-        style={{ width: "80px", height: "40px", marginInlineStart: "16px" }}
+        className="mx-1"
+        style={{ width: "80px", height: "40px"}}
         onClick={() => handleChange(Number(count) - 1)}
       >
         –
@@ -49,11 +50,8 @@ function ProductControls({ item }) {
 
       <Form.Control
         type="number"
-        style={{
-          textAlign: "center",
-          width: "80px",
-          height: "40px"
-        }}
+        className="text-center mx-1"
+        style={{ width: "80px", height: "40px"}}
         value={count}
         onChange={(e) => handleChange(Number(e.target.value))}
       />
@@ -61,7 +59,8 @@ function ProductControls({ item }) {
       <Button
         variant="success"
         disabled={!isBuyable}
-        style={{ width: "80px", height: "40px", marginInlineEnd: "16px" }}
+        className="mx-1"
+        style={{ width: "80px", height: "40px"}}
         onClick={() => handleChange(Number(count) + 1)}
       >
         +
