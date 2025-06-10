@@ -1,4 +1,4 @@
-import { Box, Text, Grid, GridItem } from "@chakra-ui/react";
+import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import formatMoney from "../../helpers/formatMoney";
 
@@ -16,38 +16,43 @@ function Receipt() {
   }
 
   return (
-    <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-      <Box></Box>
-      <Box>
-        <Text fontSize={35} fontWeight={700}>
-          {" "}
-          Deine Quittung
-        </Text>
-        {filtered.map((item) => (
-          <Grid templateColumns="repeat(3, 1fr)" gap={4} key={item.id}>
-            <GridItem>
-              {" "}
-              <Text fontSize={15}> {item.productName}</Text>{" "}
-            </GridItem>
-            <GridItem>
-              <Text> x {item.count}</Text>
-            </GridItem>
-            <GridItem>
-              {" "}
-              <Text color="green.600">{formatMoney(item.productPrice * item.count)}</Text>
-            </GridItem>
-          </Grid>
-        ))}
-        <br />
-        <hr />
-        <Text fontSize={20} fontWeight={700} float="left" ms={4}>
-          TOTAL{" "}
-        </Text>
-        <Text color="green.500" float="right" me={5} mb={5} fontSize={20}>
-          {formatMoney(spendMoney)}
-        </Text>
-      </Box>
-    </Grid>
+    <Row>
+      <Col></Col>
+      <Col>
+        <div className="text-center">
+          <h3 style={{ fontSize: "35px", fontWeight: 700 }}>Deine Quittung</h3>
+
+          {filtered.map((item) => (
+            <Row key={item.id} className="mb-2">
+              <Col>
+                <span style={{ fontSize: "15px" }}>{item.productName}</span>
+              </Col>
+              <Col>
+                <span>x {item.count}</span>
+              </Col>
+              <Col>
+                <span style={{ color: "#2F855A" }}>
+                  {formatMoney(item.productPrice * item.count)}
+                </span>
+              </Col>
+            </Row>
+          ))}
+
+          <br />
+          <hr />
+
+          <div className="d-flex justify-content-between">
+            <span style={{ fontSize: "20px", fontWeight: 700, marginLeft: "1rem" }}>
+              TOTAL
+            </span>
+            <span style={{ color: "#38A169", fontSize: "20px", marginRight: "1.25rem", marginBottom: "1.25rem" }}>
+              {formatMoney(spendMoney)}
+            </span>
+          </div>
+        </div>
+      </Col>
+      <Col></Col>
+    </Row>
   );
 }
 

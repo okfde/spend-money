@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Box, Button, Image, Text } from "@chakra-ui/react";
+import { Button, Card } from "react-bootstrap";
 import ProductControls from "../ProductControls";
 import formatMoney from "../../helpers/formatMoney";
 
@@ -11,7 +11,7 @@ function Product({ id }) {
   const price = item.type === "donation" ? item.productText : formatMoney(item.productPrice);
 
   const controls = item.type === "donation" ? (
-    <Button href="/jetzt-spenden" colorScheme="blue">
+    <Button href="/jetzt-spenden" variant="primary">
       Jetzt spenden!
     </Button>
   ) : (
@@ -19,22 +19,26 @@ function Product({ id }) {
   );
 
   return (
-    <Box
-      w="100%"
-      h="100%"
-      bg="#EBF8FF"
-      p={4}
-      color="black"
-      borderWidth="1px"
-      alignItems="center"
+    <Card
+      style={{
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#EBF8FF",
+        padding: "1rem",
+        color: "black",
+        border: "1px solid",
+        alignItems: "center"
+      }}
     >
-      <Image src={item.image} m="auto" />
-      <Text fontSize={25} fontWeight={700}>
-        {item.productName}
-      </Text>
-      <Text>{price}</Text>
-      {controls}
-    </Box>
+      <Card.Img src={item.image} style={{ margin: "auto" }} />
+      <Card.Body className="text-center">
+        <Card.Title style={{ fontSize: "25px", fontWeight: 700 }}>
+          {item.productName}
+        </Card.Title>
+        <Card.Text>{price}</Card.Text>
+        {controls}
+      </Card.Body>
+    </Card>
   );
 }
 

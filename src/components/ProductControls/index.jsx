@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Button, Input } from "@chakra-ui/react";
+import { Container, Button, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCount } from "../../redux/Product/productSlice";
 import controlSellable from "../../helpers/controlSellable";
@@ -37,38 +37,36 @@ function ProductControls({ item }) {
   };
 
   return (
-    <Box alignItems="center" m="auto">
+    <Container className="d-flex justify-content-center">
       <Button
-        colorScheme="red"
-        isDisabled={!isSellable}
-        width="80px"
-        height="40px"
-        ms={4}
+        variant="danger"
+        disabled={!isSellable}
+        style={{ width: "80px", height: "40px", marginInlineStart: "16px" }}
         onClick={() => handleChange(Number(count) - 1)}
       >
         –
       </Button>
 
-      <Input
+      <Form.Control
         type="number"
-        textAlign="center"
+        style={{
+          textAlign: "center",
+          width: "80px",
+          height: "40px"
+        }}
         value={count}
         onChange={(e) => handleChange(Number(e.target.value))}
-        width="80px"
-        height="40px"
       />
 
       <Button
-        colorScheme="green"
-        isDisabled={!isBuyable}
-        width="80px"
-        height="40px"
-        me={4}
+        variant="success"
+        disabled={!isBuyable}
+        style={{ width: "80px", height: "40px", marginInlineEnd: "16px" }}
         onClick={() => handleChange(Number(count) + 1)}
       >
         +
       </Button>
-    </Box>
+    </Container>
   );
 }
 

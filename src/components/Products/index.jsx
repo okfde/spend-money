@@ -1,6 +1,6 @@
 import Product from "../Product";
 import { useSelector } from "react-redux";
-import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Container, Row, Col } from "react-bootstrap";
 import formatMoney from "../../helpers/formatMoney";
 
 function Products() {
@@ -8,34 +8,34 @@ function Products() {
   const currentMoney = useSelector((state) => state.product.currentMoney);
 
   return (
-    <div>
-      <Box
-        mt={2}
-        mb={4}
-        bg="green.400"
-        color="white"
-        height="80px"
-        zIndex="sticky"
-        opacity={1}
-        sx={{
+    <Container fluid>
+      <div
+        style={{
+          marginTop: "0.5rem",
+          marginBottom: "1rem",
+          backgroundColor: "#48BB78", // entspricht green.400
+          color: "white",
+          height: "80px",
+          zIndex: 1000,
+          opacity: 1,
           position: "sticky",
-          top: "0",
+          top: "0"
         }}
       >
-        <Text fontSize={40} fontWeight={500}>
+        <h2 style={{ fontSize: "40px", fontWeight: 500, padding: "10px" }}>
           {" "}
           {formatMoney(currentMoney)}
-        </Text>
-      </Box>
+        </h2>
+      </div>
 
-      <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+      <Row xs={1} md={3} className="g-4">
         {items.map((item) => (
-          <GridItem key={item.id}>
+          <Col key={item.id}>
             <Product id={item.id} />
-          </GridItem>
+          </Col>
         ))}
-      </Grid>
-    </div>
+      </Row>
+    </Container>
   );
 }
 
