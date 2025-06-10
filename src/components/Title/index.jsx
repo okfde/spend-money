@@ -4,7 +4,7 @@ function Title() {
     return (
       <Container className="d-flex flex-column align-items-center">
         <Image
-          src="https://media.frag-den-staat.de/files/media/main/49/dd/49dd4b08-fab7-41c6-9b7a-a1531a5a6417/spahn.png"
+          src="https://media.frag-den-staat.de/files/media/main/07/78/0778dfc7-e475-4c41-b5ab-afc9bd089d9e/spahn.jpg"
           width={250}
           height={250}
           className="mx-auto rounded-circle"
@@ -18,7 +18,7 @@ function Title() {
           }}
           className="mx-auto"
         >
-          Verteile Spahns Milliarden
+          Verteile Spahns 3,1 Milliarden
         </h1>
       </Container>
     );
