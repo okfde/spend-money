@@ -39,7 +39,7 @@ function Receipt() {
 
           <Row className="mt-4 pt-3 border-top">
             <Col xs={6} className="text-start">
-              <span className="fs-5 fw-bold">TOTAL</span>
+              <span className="fs-5 fw-bold">Summe</span>
             </Col>
             <Col xs={6} className="text-end">
               <span className="text-primary fs-5 fw-bold">
