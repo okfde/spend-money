@@ -37,7 +37,7 @@ function ProductControls({ item }) {
   };
 
   return (
-    <Container className="d-flex justify-content-center mb-2">
+    <Container className="d-flex justify-content-center">
       <Button
         variant="secondary"
         disabled={!isSellable}
