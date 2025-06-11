@@ -16,42 +16,40 @@ function Receipt() {
   }
 
   return (
-    <Row className="mt-3">
-      <Col></Col>
-      <Col>
-        <div>
-          <h3 className="fs-2 fw-bold">Deine Quittung</h3>
+    <Container className="mt-4 mb-5">
+      <Row className="justify-content-center">
+        <Col xs={12} sm={10} md={8} lg={6} xl={5}>
+          <h3 className="fs-2 fw-bold mb-4">Deine Quittung</h3>
 
           {filtered.map((item) => (
-            <Row key={item.id} className="mt-3 mb-2">
-              <Col className="text-start">
+            <Row key={item.id} className="py-2">
+              <Col xs={6} className="text-start">
                 <span className="fs-6">{item.productName}</span>
               </Col>
-              <Col className="text-start">
+              <Col xs={2} className="text-start">
                 <span>× {item.count}</span>
               </Col>
-              <Col className="text-end">
-                <span className="text-success">
+              <Col xs={4} className="text-end">
+                <span className="text-primary">
                   {formatMoney(item.productPrice * item.count)}
                 </span>
               </Col>
             </Row>
           ))}
 
-          <hr />
-
-          <div className="d-flex justify-content-between w-100">
-            <span className="text-start fs-5 fw-bold">
-              TOTAL
-            </span>
-            <span className="text-end text-success fs-5 fw-bold mb-4">
-              {formatMoney(spendMoney)}
-            </span>
-          </div>
-        </div>
-      </Col>
-      <Col></Col>
-    </Row>
+          <Row className="mt-4 pt-3 border-top">
+            <Col xs={6} className="text-start">
+              <span className="fs-5 fw-bold">TOTAL</span>
+            </Col>
+            <Col xs={6} className="text-end">
+              <span className="text-primary fs-5 fw-bold">
+                {formatMoney(spendMoney)}
+              </span>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

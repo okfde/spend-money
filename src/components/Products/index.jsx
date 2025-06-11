@@ -8,7 +8,7 @@ function Products() {
   const currentMoney = useSelector((state) => state.product.currentMoney);
 
   return (
-    <Container fluid>
+    <Container fluid style={{ maxWidth: "1400px" }}>
       <div
         className="mt-3 mb-3 bg-primary text-white sticky-top py-2"
         style={{
@@ -22,7 +22,7 @@ function Products() {
         </h2>
       </div>
 
-      <Row xs={1} md={3} className="g-3">
+      <Row xs={1} md={2} xl={3} className="g-3">
         {items.map((item) => (
           <Col key={item.id}>
             <Product id={item.id} />

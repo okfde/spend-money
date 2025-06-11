@@ -39,10 +39,10 @@ function ProductControls({ item }) {
   return (
     <Container className="d-flex justify-content-center mb-2">
       <Button
-        variant="danger"
+        variant="secondary"
         disabled={!isSellable}
         className="mx-1"
-        style={{ width: "80px", height: "40px"}}
+        style={{ width: "80px", height: "40px", opacity: !isSellable ? "0.3" : "1"}}
         onClick={() => handleChange(Number(count) - 1)}
       >
         –
@@ -57,10 +57,10 @@ function ProductControls({ item }) {
       />
 
       <Button
-        variant="success"
+        variant="primary"
         disabled={!isBuyable}
         className="mx-1"
-        style={{ width: "80px", height: "40px"}}
+        style={{ width: "80px", height: "40px", opacity: !isBuyable ? "0.3" : "1"}}
         onClick={() => handleChange(Number(count) + 1)}
       >
         +

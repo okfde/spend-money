@@ -19,10 +19,10 @@ function Product({ id }) {
   );
 
   return (
-    <Card className="w-100 h-100 bg-light p-0 text-dark d-flex align-items-center" >
-      <Card.Img src={item.image} className="mx-auto object-fit-contain" style={{ maxHeight: "400px" }} />
+    <Card className="w-100 h-100 bg-blue-100 p-0 text-dark d-flex align-items-center">
+      <Card.Img src={item.image} className="mx-auto object-fit-contain" style={{ maxHeight: "300px" }} />
       <Card.Body className="text-center pt-0">
-        <Card.Title className="fs-4 fw-bold">
+        <Card.Title className="text-wrap-none fs-4 fw-bold">
           {item.productName}
         </Card.Title>
         <Card.Text className="fs-4">{price}</Card.Text>
