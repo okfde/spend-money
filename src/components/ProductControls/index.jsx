@@ -25,7 +25,7 @@ function ProductControls({ item }) {
   }, [currentMoney, item.productPrice]);
 
   const handleChange = (value) => {
-    if (value > maximum && currentMoney > 0) {
+    if (value > maximum) {
       setCount(maximum);
     } else if (value < 0) {
       setCount(0);
