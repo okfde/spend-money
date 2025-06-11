@@ -26,7 +26,7 @@ function Product({ id }) {
         style={{maxHeight: "300px", margin: "-15px"}}
       />
       <Card.Body className="text-center pt-0 d-flex flex-column flex-grow-1">
-        <Card.Title className="text-wrap-none fs-5 fw-bold lh-base">
+        <Card.Title className="fs-5 fw-bold lh-base" style={{ hyphens: "none" }}>
           {item.productName}
         </Card.Title>
         <Card.Text className="fs-5">{price}</Card.Text>
