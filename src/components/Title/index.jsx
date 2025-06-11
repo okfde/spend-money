@@ -15,7 +15,7 @@ function Title() {
         <div className="fs-5 text-center mt-2 mb-4">
           3,1 Milliarden Euro – <a href="https://fragdenstaat.de/artikel/exklusiv/2025/06/spahn-brh/" target="_blank" rel="noopener noreferrer">so viel hat Jens Spahn laut Bundesrechnungshof planlos verpulvert</a>.
           <br />
-          Was würdest du mit dem Geld machen? Verteil’s besser!
+          Was würdest du mit dem Geld machen? Verteil’s besser – die Quittung bekommst du zum Schluss.
         </div>
       </Container>
     );
