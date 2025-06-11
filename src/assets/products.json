@@ -5,6 +5,7 @@
       "productName": "Monatliche Stromkosten",
       "productPrice": 80,
       "image": "https://media.frag-den-staat.de/files/media/main/0d/88/0d88fc49-1181-4c78-8849-e711606b7061/steckdose.png",
+      "alternativeText": "Steckdose",
       "count": "0"
     },
     {
@@ -12,6 +13,7 @@
       "productName": "1 Jahr Rundfunkbeitrag (GEZ)",
       "productPrice": 220.32,
       "image": "https://media.frag-den-staat.de/files/media/main/69/57/69570400-677f-4156-9687-37dea91ce08f/fernseher.png",
+      "alternativeText": "Alter Fernseher",
       "count": "0"
     },
     {
@@ -19,6 +21,7 @@
       "productName": "Jährliche Semestergebühren",
       "productPrice": 320,
       "image": "https://media.frag-den-staat.de/files/media/main/fe/03/fe03ceb7-a3b2-412e-abcc-d9f822f7767f/sparschwein.png",
+      "alternativeText": "Sparschwein und Münzen",
       "count": "0"
     },
     {
@@ -26,6 +29,7 @@
       "productName": "1 Jahr Menstruationsprodukte",
       "productPrice": 420,
       "image": "https://media.frag-den-staat.de/files/media/main/c2/10/c210eefd-7829-492b-aa70-e4d40564edd5/tampons.png",
+      "alternativeText": "Tampons",
       "count": "0"
     },
     {
@@ -33,6 +37,7 @@
       "productName": "1 Jahr Deutschlandticket",
       "productPrice": 708,
       "image": "https://media.frag-den-staat.de/files/media/main/b1/33/b133711b-bb5b-4ab7-925d-002e38f99360/ticketschalter.png",
+      "alternativeText": "Fahrkartenentwerter",
       "count": "0"
     },
     {
@@ -40,6 +45,7 @@
       "productName": "1 Jahr Mittagessen für ein Schulkind",
       "productPrice": 972,
       "image": "https://media.frag-den-staat.de/files/media/main/d7/1c/d71c0105-e0d4-451a-a032-c18e2412214d/mittagessen.png",
+      "alternativeText": "Tablett mit Mittagessen",
       "count": "0"
     },
     {
@@ -47,6 +53,7 @@
       "productName": "1 Monat BaföG",
       "productPrice": 992,
       "image": "https://media.frag-den-staat.de/files/media/main/20/9c/209c1ef3-6b5b-488e-a28c-d51727a04f39/geldrolle.png",
+      "alternativeText": "Geldscheinrolle",
       "count": "0"
     },
     {
@@ -54,6 +61,7 @@
       "productName": "Eine Vollkeramik-Krone",
       "productPrice": 1000,
       "image": "https://media.frag-den-staat.de/files/media/main/f3/cd/f3cd2d08-5534-4ee1-89f1-b69b36ae1afe/zahn.png",
+      "alternativeText": "Keramikzahn",
       "count": "0"
     },
     {
@@ -61,6 +69,7 @@
       "productName": "Ein Elektrorollstuhl für Menschen mit Behinderung",
       "productPrice": 8000,
       "image": "https://media.frag-den-staat.de/files/media/main/dd/d1/ddd1dd0a-3a6b-4e41-8928-b490d1c5d94b/elektrorollstuhl.png",
+      "alternativeText": "Elektrorollstuhl",
       "count": "0"
     },
     {
@@ -68,6 +77,7 @@
       "productName": "Spahns Spendendinner",
       "productPrice": 9999,
       "image": "https://media.frag-den-staat.de/files/media/main/9a/b0/9ab093dc-f89d-4956-97b9-24d1e181606e/spendendinner.png",
+      "alternativeText": "Teller mit Besteck, Serviette und Gläsern",
       "count": "0"
     },
     {
@@ -75,6 +85,7 @@
       "productName": "1 Jahr Bedingungsloses Grundeinkommen",
       "productPrice": 14400,
       "image": "https://media.frag-den-staat.de/files/media/main/e5/14/e5146fe3-1ba6-4238-a84d-e71b06cb45d4/portemonee.png",
+      "alternativeText": "Portemonnaie",
       "count": "0"
     },
     {
@@ -82,6 +93,7 @@
       "productName": "Ein Assistenzhund",
       "productPrice": 20000,
       "image": "https://media.frag-den-staat.de/files/media/main/d9/8e/d98ec359-aa44-4ec1-a04d-ee7274483d79/hund.png",
+      "alternativeText": "Sitzender Hund",
       "count": "0"
     },
     {
@@ -89,6 +101,7 @@
       "productName": "1 Jahr Platz in einem Altersheim",
       "productPrice": 40000,
       "image": "https://media.frag-den-staat.de/files/media/main/62/7e/627e2e71-6a77-4dd4-98f3-bd5f8cd6b15e/bingo.png",
+      "alternativeText": "Bingo-Karte",
       "count": "0"
     },
     {
@@ -96,6 +109,7 @@
       "productName": "Bau eines Gemeinschaftsgartens",
       "productPrice": 100000,
       "image": "https://media.frag-den-staat.de/files/media/main/87/96/879694ef-143b-4c7f-ab42-4db042f734db/giesskanne.png",
+      "alternativeText": "Blaue Gießkanne",
       "count": "0"
     },
     {
@@ -103,6 +117,7 @@
       "productName": "Eine Mobile Arztpraxis für Wohnungslose",
       "productPrice": 250000,
       "image": "https://media.frag-den-staat.de/files/media/main/81/4a/814a6b9d-d83e-42a1-bb07-00dffc2e34f0/stethoskop.png",
+      "alternativeText": "Stethoskop",
       "count": "0"
     },
     {
@@ -110,6 +125,7 @@
       "productName": "Bau eines Spielplatzes",
       "productPrice": 280000,
       "image": "https://media.frag-den-staat.de/files/media/main/77/4c/774c81b2-887e-4cc8-81d9-a87338a1376c/wippente.png",
+      "alternativeText": "Federwippe in Entenform",
       "count": "0"
     },
     {
@@ -117,6 +133,7 @@
       "productName": "Bau einer Sozialwohnung",
       "productPrice": 300000,
       "image": "https://media.frag-den-staat.de/files/media/main/18/9a/189a4670-294d-41bf-9ac9-66eff0c62866/haus.png",
+      "alternativeText": "Wohnblock",
       "count": "0"
     },
     {
@@ -124,6 +141,7 @@
       "productName": "Spahns Villa",
       "productPrice": 4100000,
       "image": "https://media.frag-den-staat.de/files/media/main/a0/a7/a0a7cc63-5ef1-43c4-814e-71378154525b/villa.png",
+      "alternativeText": "Moderne Villa",
       "count": "0"
     },
     {
@@ -131,6 +149,7 @@
       "productName": "Bau eines Kulturzentrums",
       "productPrice": 7000000,
       "image": "https://media.frag-den-staat.de/files/media/main/14/a5/14a5cedd-e2f7-40a3-93e9-f1a0054ec052/schlagzeug.png",
+      "alternativeText": "Schlagzeug",
       "count": "0"
     },
     {
@@ -138,6 +157,7 @@
       "productName": "1 Jahr Finanzierung vom Deutschen Tierschutzbund",
       "productPrice": 22752465,
       "image": "https://media.frag-den-staat.de/files/media/main/8c/8d/8c8d194b-c57c-4577-a7e1-892bd0c25b99/katzenbabies.png",
+      "alternativeText": "Zwei Katzenbabys",
       "count": "0"
     },
     {
@@ -145,6 +165,7 @@
       "productName": "1 Jahr Finanzierung aller Tafeln in Deutschland",
       "productPrice": 41364538,
       "image": "https://media.frag-den-staat.de/files/media/main/aa/81/aa81c382-7589-48a1-915c-339347dd3f66/topf.png",
+      "alternativeText": "Roter Kochtopf",
       "count": "0"
     },
     {
@@ -152,6 +173,7 @@
       "productName": "1 Jahr Finanzierung vom Deutschen Roten Kreuz",
       "productPrice": 398200000,
       "image": "https://media.frag-den-staat.de/files/media/main/1e/4f/1e4fe022-9e32-4253-a3e7-aad23f0f83ac/arztkoffer.png",
+      "alternativeText": "Rotes Erste-Hilfe-Set mit weißem Kreuz",
       "count": "0"
     },
     {
@@ -159,6 +181,7 @@
       "productName": "Spahns FFP2-Masken",
       "productPrice": 2300000000,
       "image": "https://media.frag-den-staat.de/files/media/main/b9/fd/b9fd5417-ec76-4ab6-9fa5-074131271013/ffp2_maske.png",
+      "alternativeText": "FFP2-Maske",
       "count": "0"
     },
     {
@@ -167,6 +190,7 @@
       "productPrice": 0,
       "productText": "So viel, wie dir Transparenz wert ist",
       "image": "https://media.frag-den-staat.de/files/media/main/09/2e/092e6cf5-cfbf-4f46-b28e-ea2366215e77/logo_fds.png",
+      "alternativeText": "Logo von FragDenStaat",
       "count": "0",
       "type": "donation"
     }

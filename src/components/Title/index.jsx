@@ -9,6 +9,7 @@ function Title() {
           height={250}
           className="mx-auto rounded-circle object-fit-cover"
           loading="lazy"
+          alt="Collage mit Jens Spahn im Vordergrund. Er zeigt seinen linken Daumen nach oben. Auf den Daumen ist ein lachendes Gesicht gemalt. Im Hintergrund sind große Geldscheine zu sehen."
         />
         <h1 id="main-title" className="fs-1 mt-3 fw-bold mx-auto">
           Verteile Spahns 3,1 Milliarden

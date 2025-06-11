@@ -28,6 +28,7 @@ function Product({ id }) {
         className="mx-auto object-fit-contain"
         style={{maxHeight: "300px", margin: "-15px"}}
         loading="lazy"
+        alt={item.alternativeText}
       />
       <Card.Body className="text-center pt-0 d-flex flex-column flex-grow-1">
         <Card.Title
