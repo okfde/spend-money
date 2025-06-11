@@ -16,40 +16,59 @@ function Receipt() {
   }
 
   return (
-    <Container className="mt-4 mb-5">
-      <Row className="justify-content-center">
-        <Col xs={12} sm={10} md={8} lg={6} xl={5}>
-          <h3 className="fs-2 fw-bold mb-4">Deine Quittung</h3>
+    <section
+      className="mt-4 mb-5"
+      aria-labelledby="receipt-heading"
+    >
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+            <h3 id="receipt-heading" className="fs-2 fw-bold mb-4">Deine Quittung</h3>
 
-          {filtered.map((item) => (
-            <Row key={item.id} className="py-2">
-              <Col xs={6} className="text-start">
-                <span className="fs-6">{item.productName}</span>
-              </Col>
-              <Col xs={2} className="text-start">
-                <span>× {item.count}</span>
-              </Col>
-              <Col xs={4} className="text-end">
-                <span className="text-primary">
-                  {formatMoney(item.productPrice * item.count)}
-                </span>
-              </Col>
-            </Row>
-          ))}
+            <div role="table" aria-label="Gekaufte Produkte">
+              <div role="rowgroup">
+                <div role="row" className="visually-hidden">
+                  <span role="columnheader">Produktname</span>
+                  <span role="columnheader">Anzahl</span>
+                  <span role="columnheader">Preis</span>
+                </div>
 
-          <Row className="mt-4 pt-3 border-top">
-            <Col xs={6} className="text-start">
-              <span className="fs-5 fw-bold">Summe</span>
-            </Col>
-            <Col xs={6} className="text-end">
-              <span className="text-primary fs-5 fw-bold">
-                {formatMoney(spendMoney)}
-              </span>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+                {filtered.map((item) => (
+                  <div role="row" key={item.id} className="row py-2">
+                    <div role="cell" className="col-6 text-start">
+                      <span className="fs-6">{item.productName}</span>
+                    </div>
+                    <div role="cell" className="col-2 text-start">
+                      <span aria-label={`${item.count} Stück`}>× {item.count}</span>
+                    </div>
+                    <div role="cell" className="col-4 text-end">
+                      <span className="text-primary" aria-label={`Kosten: ${formatMoney(item.productPrice * item.count)}`}>
+                        {formatMoney(item.productPrice * item.count)}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div role="row" className="row mt-4 pt-3 border-top" aria-label="Gesamtsumme">
+                <div role="cell" className="col-6 text-start">
+                  <strong className="fs-5 fw-bold">Summe</strong>
+                </div>
+                <div role="cell" className="col-6 text-end">
+                  <span
+                    className="text-primary fs-5 fw-bold"
+                    aria-live="polite"
+                    aria-label={`Gesamtbetrag: ${formatMoney(spendMoney)}`}
+                  >
+                    {formatMoney(spendMoney)}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

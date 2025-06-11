@@ -44,6 +44,8 @@ function ProductControls({ item }) {
         className="mx-1"
         style={{ width: "80px", height: "40px", opacity: !isSellable ? "0.3" : "1"}}
         onClick={() => handleChange(Number(count) - 1)}
+        aria-label={`${item.productName} entfernen`}
+        aria-disabled={!isSellable}
       >
         –
       </Button>
@@ -54,6 +56,13 @@ function ProductControls({ item }) {
         style={{ width: "80px", height: "40px"}}
         value={count}
         onChange={(e) => handleChange(Number(e.target.value))}
+        aria-label={`Anzahl von "${item.productName}"`}
+        aria-valuemin="0"
+        aria-valuemax={maximum}
+        aria-valuenow={count}
+        min="0"
+        max={maximum}
+        id={`count-input-${item.id}`}
       />
 
       <Button
@@ -62,6 +71,8 @@ function ProductControls({ item }) {
         className="mx-1"
         style={{ width: "80px", height: "40px", opacity: !isBuyable ? "0.3" : "1"}}
         onClick={() => handleChange(Number(count) + 1)}
+        aria-label={`${item.productName} hinzufügen`}
+        aria-disabled={!isBuyable}
       >
         +
       </Button>

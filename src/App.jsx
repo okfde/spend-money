@@ -5,11 +5,11 @@ import Receipt from "./components/Receipt";
 
 function App() {
   return (
-    <div className="App">
+    <section className="App" role="application" aria-labelledby="main-title">
       <Title />
       <Products />
       <Receipt />
-    </div>
+    </section>
   );
 }
 

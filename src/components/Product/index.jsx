@@ -19,20 +19,35 @@ function Product({ id }) {
   );
 
   return (
-    <Card className="w-100 h-100 bg-blue-100 p-0 text-dark d-flex flex-column">
+    <Card
+      className="w-100 h-100 bg-blue-100 p-0 text-dark d-flex flex-column"
+      aria-labelledby={`product-title-${item.id}`}
+    >
       <Card.Img
         src={item.image}
         className="mx-auto object-fit-contain"
         style={{maxHeight: "300px", margin: "-15px"}}
+        loading="lazy"
       />
       <Card.Body className="text-center pt-0 d-flex flex-column flex-grow-1">
-        <Card.Title className="fs-5 fw-bold lh-base" style={{ hyphens: "none" }}>
+        <Card.Title
+          id={`product-title-${item.id}`}
+          className="fs-5 fw-bold lh-base"
+          style={{ hyphens: "none" }}
+        >
           {item.productName}
         </Card.Title>
-        <Card.Text className="fs-5">{price}</Card.Text>
-        <div className="mt-auto mb-2">
+        <Card.Text
+          className="fs-5"
+          aria-label={`Preis: ${price}`}
+        >
+          {price}
+        </Card.Text>
+        <section
+          className="mt-auto mb-2"
+        >
           {controls}
-        </div>
+        </section>
       </Card.Body>
     </Card>
   );
