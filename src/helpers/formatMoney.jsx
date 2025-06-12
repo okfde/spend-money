@@ -1,10 +1,7 @@
-const formatMoney = (value, alwaysShowCents = false) => {
-  return value.toLocaleString("de-DE", {
-    style: "currency",
-    currency: "EUR",
-    minimumFractionDigits: alwaysShowCents ? 2 : (Number.isInteger(value) ? 0 : 2),
-    maximumFractionDigits: 2
-  });
+const formatMoney = (value) => {
+  return Number.isInteger(value)
+    ? value.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 0 })
+    : value.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 
 export default formatMoney;
