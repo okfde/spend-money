@@ -22,7 +22,7 @@ function Receipt() {
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+          <div className="col-12 col-md-10 col-lg-6 col-xl-5">
             <h3 id="receipt-heading" className="fs-2 fw-bold mb-4">Deine Quittung</h3>
 
             <div role="table" aria-label="Gekaufte Produkte">
@@ -35,10 +35,10 @@ function Receipt() {
 
                 {filtered.map((item) => (
                   <div role="row" key={item.id} className="row py-2">
-                    <div role="cell" className="col-6 text-start px-0">
+                    <div role="cell" className="col-5 text-start px-0">
                       <span className="fs-6">{item.productName}</span>
                     </div>
-                    <div role="cell" className="col-2 text-start text-nowrap ps-2">
+                    <div role="cell" className="col-3 text-start text-nowrap ps-3">
                       <span aria-label={`${item.count} Stück`}>× {item.count}</span>
                     </div>
                     <div role="cell" className="col-4 text-end px-0">
