@@ -35,13 +35,13 @@ function Receipt() {
 
                 {filtered.map((item) => (
                   <div role="row" key={item.id} className="row py-2">
-                    <div role="cell" className="col-6 text-start">
+                    <div role="cell" className="col-6 text-start px-0">
                       <span className="fs-6">{item.productName}</span>
                     </div>
-                    <div role="cell" className="col-2 text-start">
+                    <div role="cell" className="col-2 text-start text-nowrap ps-2">
                       <span aria-label={`${item.count} Stück`}>× {item.count}</span>
                     </div>
-                    <div role="cell" className="col-4 text-end">
+                    <div role="cell" className="col-4 text-end px-0">
                       <span className="text-primary" aria-label={`Kosten: ${formatMoney(item.productPrice * item.count)}`}>
                         {formatMoney(item.productPrice * item.count)}
                       </span>
@@ -51,10 +51,10 @@ function Receipt() {
               </div>
 
               <div role="row" className="row mt-4 pt-3 border-top" aria-label="Gesamtsumme">
-                <div role="cell" className="col-6 text-start">
+                <div role="cell" className="col-6 text-start px-0">
                   <strong className="fs-5 fw-bold">Summe</strong>
                 </div>
-                <div role="cell" className="col-6 text-end">
+                <div role="cell" className="col-6 text-end px-0">
                   <span
                     className="text-primary fs-5 fw-bold"
                     aria-live="polite"
