@@ -35,7 +35,7 @@ function Receipt() {
 
                 {filtered.map((item) => (
                   <div role="row" key={item.id} className="row py-2">
-                    <div role="cell" className="col-5 text-start px-0">
+                    <div role="cell" className="col-5 text-start px-0" style={{ hyphens: "none" }}>
                       <span className="fs-6">{item.productName}</span>
                     </div>
                     <div role="cell" className="col-3 text-start text-nowrap ps-3">
