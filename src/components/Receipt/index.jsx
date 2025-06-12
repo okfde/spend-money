@@ -22,7 +22,7 @@ function Receipt() {
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-10 col-lg-6 col-xl-5">
+          <div className="col-12 col-md-10 col-lg-8 col-xl-6">
             <h3 id="receipt-heading" className="fs-2 fw-bold mb-4">Deine Quittung</h3>
 
             <div role="table" aria-label="Gekaufte Produkte">
@@ -35,32 +35,39 @@ function Receipt() {
 
                 {filtered.map((item) => (
                   <div role="row" key={item.id} className="row py-2">
-                    <div role="cell" className="col-5 text-start px-0" style={{ hyphens: "none" }}>
-                      <span className="fs-6">{item.productName}</span>
+                    <div role="cell" className="col-4 col-sm-5 text-start px-0" style={{ hyphens: "none" }}>
+                      <span className="fs-6" title={item.productName}>
+                        {item.productName}
+                      </span>
                     </div>
-                    <div role="cell" className="col-3 text-start text-nowrap ps-3">
-                      <span aria-label={`${item.count} Stück`}>× {item.count}</span>
+                    <div role="cell" className="col-3 col-sm-2 tabular-numbers text-start text-nowrap ps-3">
+                      <span aria-label={`${item.count} Stück`} className="fs-6">× {item.count}</span>
                     </div>
-                    <div role="cell" className="col-4 text-end px-0">
-                      <span className="text-primary" aria-label={`Kosten: ${formatMoney(item.productPrice * item.count)}`}>
-                        {formatMoney(item.productPrice * item.count)}
+                    <div role="cell" className="col-5 tabular-numbers text-end px-0">
+                      <span
+                        className="text-primary"
+                        aria-label={`Kosten: ${formatMoney(item.productPrice * item.count, true)}`}
+                        style={{ fontSize: "calc(0.85rem + 0.15vw)" }}
+                      >
+                        {formatMoney(item.productPrice * item.count, true)}
                       </span>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div role="row" className="row mt-4 pt-3 border-top" aria-label="Gesamtsumme">
+              <div role="row" className="row mt-3 pt-3 border-top" aria-label="Gesamtsumme">
                 <div role="cell" className="col-6 text-start px-0">
-                  <strong className="fs-5 fw-bold">Summe</strong>
+                  <strong className="fs-6 fw-bold">Summe</strong>
                 </div>
-                <div role="cell" className="col-6 text-end px-0">
+                <div role="cell" className="col-6 tabular-numbers text-end px-0">
                   <span
-                    className="text-primary fs-5 fw-bold"
+                    className="text-primary fw-bold"
                     aria-live="polite"
-                    aria-label={`Gesamtbetrag: ${formatMoney(spendMoney)}`}
+                    aria-label={`Gesamtbetrag: ${formatMoney(spendMoney, true)}`}
+                    style={{ fontSize: "calc(0.85rem + 0.15vw)" }}
                   >
-                    {formatMoney(spendMoney)}
+                    {formatMoney(spendMoney, true)}
                   </span>
                 </div>
               </div>
