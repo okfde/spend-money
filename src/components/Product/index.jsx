@@ -11,7 +11,7 @@ function Product({ id }) {
   const price = item.type === "donation" ? item.productText : formatMoney(item.productPrice);
 
   const controls = item.type === "donation" ? (
-    <Button href="/jetzt-spenden" variant="primary" target="_blank" rel="noopener noreferrer">
+    <Button href="/spenden/?pk_campaign=spahn-shop" variant="primary" target="_blank" rel="noopener noreferrer">
       Jetzt spenden!
     </Button>
   ) : (
