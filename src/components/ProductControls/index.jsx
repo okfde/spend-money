@@ -54,7 +54,7 @@ function ProductControls({ item }) {
       <Form.Control
         type="number"
         className="text-center mx-1"
-        style={{ width: "80px", height: "40px"}}
+        style={{ width: "110px", height: "40px"}}
         value={count}
         onChange={(e) => handleChange(Number(e.target.value))}
         aria-label={`Anzahl von "${item.productName}"`}
