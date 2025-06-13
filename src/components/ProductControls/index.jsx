@@ -3,6 +3,7 @@ import { Container, Button, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCount } from "../../redux/Product/productSlice";
 import controlSellable from "../../helpers/controlSellable";
+import formatNumber from "../../helpers/formatNumber";
 
 function ProductControls({ item }) {
   const currentMoney = useSelector((state) => state.product.currentMoney);

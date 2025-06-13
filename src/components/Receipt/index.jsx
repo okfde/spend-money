@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import formatMoney from "../../helpers/formatMoney";
+import formatNumber from "../../helpers/formatNumber";
 
 function Receipt() {
   const items = useSelector((state) => state.product.items);
@@ -42,10 +43,10 @@ function Receipt() {
                     </div>
                     <div role="cell" className="col-3 col-sm-2 tabular-numbers text-start text-nowrap ps-4">
                       <span
-                        aria-label={`${item.count} Stück`}
+                        aria-label={`${formatNumber(item.count)} Stück`}
                         style={{ fontSize: "calc(0.85rem + 0.15vw)" }}
                        >
-                        × {item.count}
+                        × {formatNumber(item.count)}
                       </span>
                     </div>
                     <div role="cell" className="col-6 col-sm-5 tabular-numbers text-end px-0">
