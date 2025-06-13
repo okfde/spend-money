@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import "./fds.css"; // Uncomment to test FDS styles locally.
+// CSS file from fragdenstaat_de for local testing, should not be copied by django-contractor
+import "./main.css";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
