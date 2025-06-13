@@ -20,7 +20,7 @@ function Product({ id }) {
 
   return (
     <Card
-      className="w-100 h-100 bg-blue-100 p-0 text-dark d-flex flex-column"
+      className="w-100 h-100 p-0 text-bg-callout bg-opacity-50 d-flex flex-column"
       aria-labelledby={`product-title-${item.id}`}
     >
       <Card.Img
