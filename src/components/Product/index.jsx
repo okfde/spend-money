@@ -25,8 +25,9 @@ function Product({ id }) {
     >
       <Card.Img
         src={item.image}
-        className="mx-auto object-fit-contain"
-        style={{maxHeight: "300px", margin: "-15px"}}
+        width={300}
+        height={300}
+        className="object-fit-contain"
         loading="lazy"
         alt={item.alternativeText}
       />
